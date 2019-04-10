@@ -13,7 +13,7 @@ tell you how many bits you need to tranmit the messeges
 
 cross-entropy
 
-https://latex.codecogs.com/gif.latex?H({p},{q})=-\sum&space;_{i}{p_{i}}log{_2}({q_i})
+![](https://latex.codecogs.com/gif.latex?H({p},{q})=-\sum&space;_{i}{p_{i}}log{_2}({q_i}))
 
 tell you the average length(bits) you need to transmit the messeges
 
