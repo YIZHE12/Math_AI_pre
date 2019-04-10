@@ -1,17 +1,17 @@
 # Math_AI_prepration
 ## 1. Loss function:
-
+___
 #### Classificaiton problem:
 
 Cross entropy or Hinge loss
 
-Entropy: 
+##### Entropy: 
 
 ![](https://latex.codecogs.com/gif.latex?-\sum&space;_{i}{p_{i}}log{_2}({p_i}))
 
 tell you how many bits you need to tranmit the messeges
 
-cross-entropy
+###### cross-entropy
 
 ![](https://latex.codecogs.com/gif.latex?H({p},{q})=-\sum&space;_{i}{p_{i}}log{_2}({q_i}))
 
