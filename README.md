@@ -21,6 +21,16 @@ p: actual probability
 
 q: predicted probability
 
+![](https://people.richland.edu/james/lecture/m116/logs/log2.gif)
+
+when p = q, the cross entropy has its minimum.
+
+For example, if one example belong to class 1, then the actually probability of class one is 1, class two is 0,
+then the cross entropy will be -1log(1)+-0log(0) 
+log(1) is zero and log(0) is -Inf, therefore, the cross entropy is 0
+
+but on the other hand, if the classifier predict it is clas two while the true label is class one
+the cross entropy will be Inf
 
 Hinge loss is faster to train in gradient descent than cross entropy - real time desicion making
 
