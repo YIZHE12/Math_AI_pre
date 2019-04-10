@@ -65,4 +65,24 @@ If accuracy is more important, use cross entropy
 MSE, MAE or Huber loss
 
 MAE (L1 loss), is more robust to outliers than MSE
+
 Huber loss, even more robust to outliers
+
+
+
+Proposed paper to read about loss function
+
+Focal loss
+
+Due to the added exp weight based on class probability, it can be unstable. Atherefore, it needs to use sigmoid instead of ReLu, also it need to add alpha, and using prior for model initialization to damping down the effect of the exp term 
+
+It is the opposite as Non-max suppresion, which remove all bounding box with low probability. But Non-max suppresion is more useful in YOLO, becasue the box size is small. But in the proposed RetinaNet, it has pyramid feature extraction, therefore it doesn't need that to remove false positive. It is problem is false negative. 
+
+Anchor box: box with different shape for different classes
+
+It compared the most three mehtods:
+
+inbalanced classes weighfting, non-max suppresion, and hinge loss
+
+It has several clever design
+The skip connection and 1x1 conv (network in network) (bottleneck design) in 
