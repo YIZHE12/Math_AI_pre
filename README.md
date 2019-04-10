@@ -1,17 +1,18 @@
 # Math_AI_prepration
+
 ## 1. Loss function:
 ___
-#### Classificaiton problem:
+### Classificaiton problem:
 
 Cross entropy or Hinge loss
 
-##### Entropy: 
+#### Entropy: 
 
 ![](https://latex.codecogs.com/gif.latex?-\sum&space;_{i}{p_{i}}log{_2}({p_i}))
 
 tell you how many bits you need to tranmit the messeges
 
-###### cross-entropy
+#### cross-entropy
 
 ![](https://latex.codecogs.com/gif.latex?H({p},{q})=-\sum&space;_{i}{p_{i}}log{_2}({q_i}))
 
@@ -29,14 +30,16 @@ For example, if one example belong to class 1, then the actually probability of 
 then the cross entropy will be -1log(1)+-0log(0) 
 log(1) is zero and log(0) is -Inf, therefore, the cross entropy is 0
 
+
 but on the other hand, if the classifier predict it is clas two while the true label is class one
 the cross entropy will be Inf
+
 
 Hinge loss is faster to train in gradient descent than cross entropy - real time desicion making
 
 If accuracy is more important, use cross entropy
 
-#### Regression:
+### Regression:
 MSE, MAE or Huber loss
 
 MAE (L1 loss), is more robust to outliers than MSE
