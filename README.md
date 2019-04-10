@@ -6,7 +6,7 @@ ___
 
 Cross entropy or Hinge loss
 
-#### Entropy: 
+#### Entropy 
 
 ![](https://latex.codecogs.com/gif.latex?-\sum&space;_{i}{p_{i}}log{_2}({p_i}))
 
@@ -34,7 +34,24 @@ log(1) is zero and log(0) is -Inf, therefore, the cross entropy is 0
 but on the other hand, if the classifier predict it is clas two while the true label is class one
 the cross entropy will be Inf
 
+    def cross_entropy(X,y):
+      """
+      X is the output from fully connect layer (shape with n_example, n_classes)
+      y is labels (n_example, 1)
+      """
+      m = y.shape[0]
+      p = softmax(X)
+      log_likelihood = -np.log(p[range(m), y])
+      loss = np.sum(log_likelihood)/m
 
+      return loss
+
+
+
+
+
+
+#### Hinge loss
 Hinge loss is faster to train in gradient descent than cross entropy - real time desicion making
 
 If accuracy is more important, use cross entropy
