@@ -17,7 +17,9 @@ cross-entropy
 
 tell you the average length(bits) you need to transmit the messeges
 
+p: actual probability
 
+q: predicted probability
 
 
 Hinge loss is faster to train in gradient descent than cross entropy - real time desicion making
