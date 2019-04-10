@@ -50,6 +50,13 @@ the cross entropy will be Inf
 
 
 #### Hinge loss
+
+Hinge loss all penalize those that are correct but not confident
+
+![](https://i.stack.imgur.com/Ifeze.png)
+
+![](https://latex.codecogs.com/gif.latex?\sum&space;max(0,&space;1&space;-&space;{y_i}*h{_\theta}\left&space;(&space;x{_i}&space;\right&space;)))
+
 Hinge loss is faster to train in gradient descent than cross entropy - real time desicion making
 
 If accuracy is more important, use cross entropy
