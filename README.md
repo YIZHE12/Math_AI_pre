@@ -16,15 +16,13 @@ tell you how many bits you need to tranmit the messeges
 
 ![](https://latex.codecogs.com/gif.latex?H({p},{q})=-\sum&space;_{i}{p_{i}}log{_2}({q_i}))
 
-tell you the average length(bits) you need to transmit the messeges
-
 p: actual probability
 
 q: predicted probability
 
 ![](https://people.richland.edu/james/lecture/m116/logs/log2.gif)
 
-when p = q, the cross entropy has its minimum.
+when p = q, the cross entropy has its minimum. It penalize the prediction that is highly confident but inaccurate.
 
 For example, if one example belong to class 1, then the actually probability of class one is 1, class two is 0,
 then the cross entropy will be -1log(1)+-0log(0) 
