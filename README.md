@@ -70,9 +70,13 @@ Huber loss, even more robust to outliers
 
 
 
-Proposed paper to read about loss function
+### Proposed paper to read about loss function
+___
+#### Focal loss
+This paper proposed a new loss funciton: cross entropy with modulation based on prediction confident. It emphasize the loss for low probability and reduce the influence of high confident prediction in the total loss, forcing the network to learn form the weak prediciton. The implementation is straight forward, by adding a modulating facotor ![](https://latex.codecogs.com/gif.latex?{_{(1-p{_t})}}^{\gamma&space;}), in the cross entropy equation before the summation. If ![](https://latex.codecogs.com/gif.latex?p_{t}) > 0.5, then this term will make its loss contribution smaller, and vice versa. 
 
-Focal loss
+Their proposed improvement is mainly based on the new loss function but not the archetecture themselves. Their RetianNet is based on two well known and well function articheture, the ResNet and FPN. The impact of this articles is that the proposed loss funciton can also be used in any other classification task. I tested the loss function on time series classification with inbalanced classes with an instance improvement. The authors also mentioned a few other types of methods for inbalanced classes: Hinge loss, weighted loss based on class distribution, Non-max suppresion. 
+
 
 Due to the added exp weight based on class probability, it can be unstable. Atherefore, it needs to use sigmoid instead of ReLu, also it need to add alpha, and using prior for model initialization to damping down the effect of the exp term 
 
