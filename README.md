@@ -82,7 +82,7 @@ The authors also mentioned a few other types of methods for inbalanced classes: 
 As Non-max suppresion and hinge loss both discard completely of data over a certain threshold but the focal loss still keep this informatin for later training. 
 
 
-Due to the added exp weight based on class probability, it can be unstable. Atherefore, it needs to use sigmoid instead of ReLu, also it need to add alpha, and using prior for model initialization to damping down the effect of the exp term. However, because alpha is on top of the exp term, the impact and the range of an ideal alpha is small. I will suggest to add a linear term to damping down the effect, in other words, used ![](CodeCogsEqn (3).gif)
+Due to the added exp weight based on class probability, it can be unstable. Atherefore, it needs to use sigmoid instead of ReLu, also it need to add alpha, and using prior for model initialization to damping down the effect of the exp term. However, because alpha is on top of the exp term, the impact and the range of an ideal alpha is small. I will suggest to add a linear term to damping down the effect, in other words, used ![](img src= 'CodeCogsEqn (3).gif')
 
 instead.
 
