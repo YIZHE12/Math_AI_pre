@@ -82,7 +82,7 @@ The authors also mentioned a few other types of methods for inbalanced classes: 
 As Non-max suppresion and hinge loss both discard completely of data over a certain threshold but the focal loss still keep this informatin for later training. 
 
 
-Due to the added exp weight based on class probability, it can be unstable. Atherefore, it needs to use sigmoid instead of ReLu, also it need to add alpha, and using prior for model initialization to damping down the effect of the exp term. However, because alpha is on top of the exp term, the impact and the range of an ideal alpha is small. I will suggest to add a linear term to damping down the effect, in other words, used ![](https://latex.codecogs.com/gif.latex?(1-p{_t})^{\gamma}&space;&plus;&space;\alpha&space;{_t}(1-p{_t})) instead.
+Due to the added exp weight based on class probability, it can be unstable. Atherefore, it needs to use sigmoid instead of ReLu, also it need to add alpha, and using prior for model initialization to damping down the effect of the exp term. However, because alpha is on top of the exp term, the impact and the range of an ideal alpha is small. I will suggest to add a linear term to damping down the effect, in other words, used ![](https://latex.codecogs.com/gif.latex?(1-p{_t})^{\gamma}&space;&plus;&space;\alpha&space;{_t}(1-p{_t}))instead.
 
 It is the opposite as Non-max suppresion, which remove all bounding box with low probability. But Non-max suppresion is more useful in YOLO, becasue the box size is small. But in the proposed RetinaNet, it has pyramid feature extraction, therefore it doesn't need that to remove false positive. It is problem is false negative. 
 
