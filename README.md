@@ -61,9 +61,9 @@ If accuracy is more important, use cross entropy
 
 #### Kullback-Leibler divergence
 
- In simplified terms, it is a measure of surprise. For two coded method, P and Q, the KL divergence is the lower bound of the increase of average length to transmit a language that was coded in P but now need to be coded in Q. When P is the same as Q, then obviously, this increase is 0. One appication of KL divergence is the famous generative adversarial network (GAN).
+ In simplified terms, it is a measure of surprise. It can be used to measure the distrance of two distribution. One appication of KL divergence is the famous generative adversarial network (GAN). 
  
- [Example](https://www.youtube.com/watch?v=LJwtEaP2xKA)
+ [Example:](https://www.youtube.com/watch?v=LJwtEaP2xKA) For two coded method, P and Q, the KL divergence is the lower bound of the increase of average length to transmit a language that was coded in P but now need to be coded in Q. When P is the same as Q, then obviously, this increase is 0.
 
 ### Regression:
 MSE, MAE or Huber loss
