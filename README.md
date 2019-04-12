@@ -47,6 +47,14 @@ the cross entropy will be Inf
 For unbalanced classes, can use Focal Loss:
 ![](https://latex.codecogs.com/gif.latex?FL(p{_t})&space;=&space;-\alpha_{t}(1-p{_t}){^{_{}}\gamma}&space;log(p{_t}))
 
+#### Kullback-Leibler divergence (relative entropy)
+
+In simplified terms, it is a measure of the distrance of two distributions. One appication of KL divergence is the famous generative adversarial network (GAN). KL divergence from distribution Q to P:
+
+![](https://i2.wp.com/syncedreview.com/wp-content/uploads/2017/07/fig_4.png?resize=771%2C301&ssl=1)
+
+ [Example:](https://www.youtube.com/watch?v=LJwtEaP2xKA) KL Divergence in this example can be understand as the number of extra bits needed in avarage to transmit a value drawn from distribution P when we use a code that was designed for another distribution Q? Note that in this example, the frequence was set as 1/2 or 1/4. In reality, it doesn't need to be two to the power of n, which means the KL divergence is the lower bound of the extra average length to transmit data. When P is the same as Q, then obviously, this increase is 0.
+
 #### Hinge loss
 
 Hinge loss all penalize those that are correct but not confident
@@ -58,14 +66,6 @@ Hinge loss all penalize those that are correct but not confident
 Hinge loss is faster to train in gradient descent than cross entropy - real time desicion making
 
 If accuracy is more important, use cross entropy
-
-#### Kullback-Leibler divergence
-
-In simplified terms, it is a measure of the distrance of two distributions. One appication of KL divergence is the famous generative adversarial network (GAN). 
-
-![](https://i2.wp.com/syncedreview.com/wp-content/uploads/2017/07/fig_4.png?resize=771%2C301&ssl=1)
-
- [Example:](https://www.youtube.com/watch?v=LJwtEaP2xKA) KL Divergence in this example can be understand as the number of extra bits needed in avarage to transmit a value drawn from distribution P when we use a code that was designed for another distribution Q? Note that in this example, the frequence was set as 1/2 or 1/4. In reality, it doesn't need to be two to the power of n, which means the KL divergence is the lower bound of the extra average length to transmit data. When P is the same as Q, then obviously, this increase is 0.
 
 ### Regression:
 MSE, MAE or Huber loss
