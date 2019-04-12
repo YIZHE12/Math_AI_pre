@@ -60,6 +60,10 @@ KL divergence is not symmetric, meaning, D(P||Q) is not equal to D(Q||P).
 
  [Example:](https://www.youtube.com/watch?v=LJwtEaP2xKA) KL Divergence in this example can be understand as the number of extra bits needed in avarage to transmit a value drawn from distribution P when we use a code that was designed for another distribution Q? Note that in this example, the frequence was set as 1/2 or 1/4. In reality, it doesn't need to be two to the power of n, which means the KL divergence is the lower bound of the extra average length to transmit data. When P is the same as Q, then obviously, this increase is 0.
 
+[Mutual information](https://www.youtube.com/watch?v=ZKyNGIXH6GQ) using KL-divergence: I(X;Y)=KL(p(x,y)||p(x)p(y)), x and y are two indepedent variables. 
+Minimizing mutual information is equal to maximizing the KL-divergence.
+
+
 #### Hinge loss
 
 Hinge loss all penalize those that are correct but not confident
