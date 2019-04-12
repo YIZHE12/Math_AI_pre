@@ -53,7 +53,8 @@ In simplified terms, it is a measure of the distrance of two distributions. One 
 
 ![](https://i2.wp.com/syncedreview.com/wp-content/uploads/2017/07/fig_4.png?resize=771%2C301&ssl=1)
 
-Note that the above Eq 19 is the cross entropy. 
+From above, you can see that KL divergence = Entropy - Cross Entropy
+When the Entropy is constant, we only need to minimize the cross entropy in order to maxified the KL divergence. Why do we want a large KL divergence? When the difference is large, it is easier to seperate the two classes!
 
 KL divergence is not symmetric, meaning, D(P||Q) is not equal to D(Q||P). 
 
