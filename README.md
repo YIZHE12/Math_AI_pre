@@ -53,7 +53,7 @@ In simplified terms, it is a measure of the distrance of two distributions. One 
 
 ![](https://i2.wp.com/syncedreview.com/wp-content/uploads/2017/07/fig_4.png?resize=771%2C301&ssl=1)
 
-Note that the above Eq 19 is the cross entropy. Only when P and Q are independent, the above simplication stands as otherwise the term we ignore is not a constant value. 
+Note that the above Eq 19 is the cross entropy. 
 
 KL divergence is not symmetric, meaning, D(P||Q) is not equal to D(Q||P). 
 
