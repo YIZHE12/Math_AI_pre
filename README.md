@@ -61,8 +61,10 @@ If accuracy is more important, use cross entropy
 
 #### Kullback-Leibler divergence
 
- In simplified terms, it is a measure of the distrance of two distributions. One appication of KL divergence is the famous generative adversarial network (GAN). 
- 
+In simplified terms, it is a measure of the distrance of two distributions. One appication of KL divergence is the famous generative adversarial network (GAN). 
+
+![](https://i2.wp.com/syncedreview.com/wp-content/uploads/2017/07/fig_4.png?resize=771%2C301&ssl=1)
+
  [Example:](https://www.youtube.com/watch?v=LJwtEaP2xKA) For two coded method, P and Q, the KL divergence is the lower bound of the increase of average length to transmit a language that was coded in P but now need to be coded in Q. When P is the same as Q, then obviously, this increase is 0.
 
 ### Regression:
