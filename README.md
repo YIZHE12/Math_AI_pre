@@ -65,7 +65,7 @@ In simplified terms, it is a measure of the distrance of two distributions. One 
 
 ![](https://i2.wp.com/syncedreview.com/wp-content/uploads/2017/07/fig_4.png?resize=771%2C301&ssl=1)
 
- [Example:](https://www.youtube.com/watch?v=LJwtEaP2xKA) For two coded method, P and Q, the KL divergence is the lower bound of the increase of average length to transmit a language that was coded in P but now need to be coded in Q. When P is the same as Q, then obviously, this increase is 0.
+ [Example:](https://www.youtube.com/watch?v=LJwtEaP2xKA) KL Divergence in this example can be understand as the number of extra bits needed in avarage to transmit a value drawn from distribution P when we use a code that was designed for another distribution Q? Note that in this example, the frequence was set as 1/2 or 1/4. In reality, it doesn't need to be two to the power of n, which means the KL divergence is the lower bound of the extra average length to transmit data. When P is the same as Q, then obviously, this increase is 0.
 
 ### Regression:
 MSE, MAE or Huber loss
