@@ -44,10 +44,8 @@ the cross entropy will be Inf
 
       return loss
 
-
-
-
-
+For unbalanced classes, can use Focal Loss:
+![](https://latex.codecogs.com/gif.latex?FL(p{_t})&space;=&space;-\alpha_{t}(1-p{_t}){^{_{}}\gamma}&space;log(p{_t}))
 
 #### Hinge loss
 
@@ -61,6 +59,12 @@ Hinge loss is faster to train in gradient descent than cross entropy - real time
 
 If accuracy is more important, use cross entropy
 
+#### Kullback-Leibler divergence
+
+ In simplified terms, it is a measure of surprise. For two coded method, P and Q, the KL divergence is the lower bound of the increase of average length to transmit a language that was coded in P but now need to be coded in Q. When P is the same as Q, then obviously, this increase is 0. 
+ 
+ [Example](https://www.youtube.com/watch?v=LJwtEaP2xKA)
+
 ### Regression:
 MSE, MAE or Huber loss
 
@@ -68,34 +72,6 @@ MAE (L1 loss), is more robust to outliers than MSE
 
 Huber loss, even more robust to outliers
 
-
-
-### Proposed paper to read about loss function
-___
-#### Focal loss
-This paper proposed a new loss funciton for dense objection detection. Its aim is to increase the one stage detector's accuracy so that it can match with the two stage detector methods while maintaing the advantage in speed. The new cost function is a dynamic scale cross entropy with modulation based on prediction confident. It emphasize the loss for low probability and reduce the influence of high confident prediction in the total loss, forcing the network to learn form the weak prediciton. The implementation is straight forward, by adding a modulating facotor ![](https://latex.codecogs.com/gif.latex?{_{(1-p{_t})}}^{\gamma&space;}), in the cross entropy equation before the summation. If ![](https://latex.codecogs.com/gif.latex?p_{t}) > 0.5, then this term will make its loss contribution smaller, and vice versa. They also proposed to keep ![](https://latex.codecogs.com/gif.latex?\alpha), which is the weighting factor for balanced cross entropy. So the final focal loss function is ![](https://latex.codecogs.com/gif.latex?FL(p{_t})&space;=&space;-\alpha_{t}(1-p{_t}){^{_{}}\gamma}&space;log(p{_t}))
-
-Their proposed improvement is mainly based on the new loss function but not the archetecture themselves. Their RetianNet is based on two well known and well function articheture, the ResNet and FPN. The impact of this articles is that the proposed loss funciton can also be used in any other classification task. I tested the loss function on time series classification with highly inbalanced classes with an instance improvement. However, when I tested on image segmentation where the inbalanced class problem is less significant, the improvement is small. 
-
-The authors also mentioned a few other types of methods for inbalanced classes: Hinge loss, weighted loss based on class distribution, Non-max suppresion and fixed background forground ratio. 
-
-As Non-max suppresion and hinge loss both discard completely of data over a certain threshold but the focal loss still keep this informatin for later training. 
-
-
-Due to the added exp weight based on class probability, it can be unstable. Atherefore, it needs to use sigmoid instead of ReLu, also it need to add alpha, and using prior for model initialization to damping down the effect of the exp term. However, because alpha is on top of the exp term, the impact and the range of an ideal alpha is small. I will suggest to add a linear term to damping down the effect, in other words, used <img src= 'CodeCogsEqn (3).gif'>
-
-instead.
-
-It is the opposite as Non-max suppresion, which remove all bounding box with low probability. But Non-max suppresion is more useful in YOLO, becasue the box size is small. But in the proposed RetinaNet, it has pyramid feature extraction, therefore it doesn't need that to remove false positive. It is problem is false negative. 
-
-Anchor box: box with different shape for different classes
-
-It compared the most three mehtods:
-
-inbalanced classes weighfting, non-max suppresion, and hinge loss
-
-It has several clever design
-The skip connection and 1x1 conv (network in network) (bottleneck design) in 
 
 #### History of CNN
 
