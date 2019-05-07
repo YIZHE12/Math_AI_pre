@@ -105,6 +105,13 @@ a. exponentially weighted averages:
 
 ![](https://latex.codecogs.com/gif.latex?V{_t}&space;=&space;\beta&space;V{_{t-1}}&space;&plus;&space;(1-\beta)\Theta&space;{_t}), where ![](https://latex.codecogs.com/gif.latex?V{_t}) is the calculated average at time point t, and ![](https://latex.codecogs.com/gif.latex?\theta&space;{_t}) is the actual number at time point t. When ![](https://latex.codecogs.com/gif.latex?\beta&space;=&space;0.9), it can be understand as averaging every 10 timesteps. When ![](https://latex.codecogs.com/gif.latex?\beta&space;=&space;0.98), it can be understand as averaging everying 50 timesteps as ![](https://latex.codecogs.com/gif.latex?\frac{1}{1-\beta&space;}).
 
+Note that:
+
+<img src="http://www.sciweavers.org/tex2img.php?eq=0.9%5E%7B10%7D%20%20%5Capprox%200.35%20%5Capprox%20%20%5Cfrac%7B1%7D%7Be%7D%20%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="0.9^{10}  \approx 0.35 \approx  \frac{1}{e}  " width="144" height="43" /> and <img src="http://www.sciweavers.org/tex2img.php?eq=%281-%20%5Cvarepsilon%20%29%5E%5Cfrac%7B1%7D%7B%20%5Cvarepsilon%7D%20%3D%20%20%5Cfrac%7B1%7D%7Be%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="(1- \varepsilon )^\frac{1}{ \varepsilon} =  \frac{1}{e} " width="103" height="43" />
+
+
+
+
 
 
 ### Practical tricks
