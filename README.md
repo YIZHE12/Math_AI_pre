@@ -86,13 +86,15 @@ Huber loss, even more robust to outliers
 ## 2. Optimization
 ### Algorithm
 1.Gradient descent family
- <img src="GD.png" width="250" title="Cost Space">
+
+ <img src="GD.png" width="250" title="Cost Space"> 
+ image from slice of Andrew Ng's deep learning specilization course
  
-a. Blue: Batch gradient descent (vanilla) - update the whole training example in one iteration. It can take a long time for one iteration. 
+a. Blue: Batch gradient descent (vanilla) - update the whole training example in one iteration. It can take a long time for one iteration. When less than 2000 examples, use a.
 
 b. Purple: Stochastic gradient descent - update one training example in one iteration. It can be slow due to the loss of the advantage of vectorization. 
 
-c. Green: Minibatch gradient descent - update one batch/ several examples in one iteration/epoch, it runs much faster than a. for a large dataset. Tips: when choosing the batch size, 2^n usually have been computational efficiency. It is the most commonly used among the three.
+c. Green: Minibatch gradient descent - update one batch/ several examples in one iteration/epoch, it runs much faster than a. for a large dataset. Tips: when choosing the batch size, 2^n usually have been computational efficiency. It is the most commonly used among the three. Typical values of the batch size: 64, 128, 256 and 512. Make sure one batch fits into the GPU memorgy.
 
 
 ### Practical tricks
