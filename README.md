@@ -109,6 +109,7 @@ Note that:
 
 <img src="http://www.sciweavers.org/tex2img.php?eq=0.9%5E%7B10%7D%20%20%5Capprox%200.35%20%5Capprox%20%20%5Cfrac%7B1%7D%7Be%7D%20%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="0.9^{10}  \approx 0.35 \approx  \frac{1}{e}  " width="144" height="43" /> and <img src="http://www.sciweavers.org/tex2img.php?eq=%281-%20%5Cvarepsilon%20%29%5E%5Cfrac%7B1%7D%7B%20%5Cvarepsilon%7D%20%3D%20%20%5Cfrac%7B1%7D%7Be%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="(1- \varepsilon )^\frac{1}{ \varepsilon} =  \frac{1}{e} " width="103" height="43" />
 
+ <img src="weightdecay2.jpg" width="250" title="Cost Space"> 
 
 
 
