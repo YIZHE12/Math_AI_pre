@@ -83,6 +83,10 @@ MAE (L1 loss), is more robust to outliers than MSE
 
 Huber loss, even more robust to outliers
 
+## 2. Optimization
+### Algorithm
+
+### Practical tricks
 
 #### History of CNN
 
