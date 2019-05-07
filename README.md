@@ -85,6 +85,11 @@ Huber loss, even more robust to outliers
 
 ## 2. Optimization
 ### Algorithm
+1.Gradient descent family
+
+a. Batch gradient descent (vanilla) - update the whole training example in one step
+b. Stochastic gradient descent - update one training example in one step
+c. Minibatch gradient descent - update one batch/ several examples in one step
 
 ### Practical tricks
 
