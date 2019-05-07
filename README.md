@@ -87,8 +87,7 @@ Huber loss, even more robust to outliers
 ### Algorithm
 1.Gradient descent family
 
- <img src="GD.png" width="250" title="Cost Space"> 
- image from slice of Andrew Ng's deep learning specilization course
+ <img src="GD.png" width="250" title="Cost Space"> image from slice of Andrew Ng's deep learning specilization course
  
 a. Blue: Batch gradient descent (vanilla) - update the whole training example in one iteration. It can take a long time for one iteration. When less than 2000 examples, use a.
 
