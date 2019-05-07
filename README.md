@@ -107,14 +107,7 @@ a. exponentially weighted averages:
 
 Note that:
 
-![](http://www.sciweavers.org/tex2img.php?eq=0.9%5E%7B10%7D%20%5Capprox%200.35%20%5Capprox%20%5Cfrac%7B1%7D%7Be%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img)
-
-and 
-
-![](http://www.sciweavers.org/tex2img.php?eq=%281-%20%5Cvarepsilon%20%29%5E%5Cfrac%7B1%7D%7B%20%5Cvarepsilon%7D%20%3D%20%20%5Cfrac%7B1%7D%7Be%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img])
-
-
- <img src="weightdecay2.jpg" width="500"> 
+<img src="weightdecay2.jpg" width="500"> 
 
 
 
