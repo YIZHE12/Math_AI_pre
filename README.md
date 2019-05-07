@@ -100,16 +100,16 @@ c. Green: Minibatch gradient descent - update one batch/ several examples in one
 (2) adaptive learning rate
 
 Before going into details, we need to first understand two concepts: exponentially weighted averages and bias correction. 
-
-a. exponentially weighted averages:
-
 ![](https://latex.codecogs.com/gif.latex?V{_t}&space;=&space;\beta&space;V{_{t-1}}&space;&plus;&space;(1-\beta)\Theta&space;{_t}), where ![](https://latex.codecogs.com/gif.latex?V{_t}) is the calculated average at time point t, and ![](https://latex.codecogs.com/gif.latex?\theta&space;{_t}) is the actual number at time point t. When ![](https://latex.codecogs.com/gif.latex?\beta&space;=&space;0.9), it can be understand as averaging every 10 timesteps. When ![](https://latex.codecogs.com/gif.latex?\beta&space;=&space;0.98), it can be understand as averaging everying 50 timesteps as ![](https://latex.codecogs.com/gif.latex?\frac{1}{1-\beta&space;}).
 
 Note that:
 
 <img src="weightdecay2.jpg" width="500"> 
+<img src="weightdecay3.jpg" width="500"> 
 
+1. Gradient descent with momentum
 
+<img src="weightdecay4.jpg" width="500"> 
 
 
 
