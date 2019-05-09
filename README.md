@@ -100,9 +100,19 @@ c. Green: Minibatch gradient descent - update one batch/ several examples in one
 (2) adaptive learning rate
 
 Before going into details, we need to first understand two concepts: exponentially weighted averages and bias correction. 
-![](https://latex.codecogs.com/gif.latex?V{_t}&space;=&space;\beta&space;V{_{t-1}}&space;&plus;&space;(1-\beta)\Theta&space;{_t}), where ![](https://latex.codecogs.com/gif.latex?V{_t}) is the calculated average at time point t, and ![](https://latex.codecogs.com/gif.latex?\theta&space;{_t}) is the actual number at time point t. The exponentially weighted average method can be understood as taking the average of the last  ![](https://latex.codecogs.com/gif.latex?\frac{1}{1-\beta&space;}). For example, when ![](https://latex.codecogs.com/gif.latex?\beta&space;=&space;0.9), it can be understand as averaging the last 20 data points. When ![](https://latex.codecogs.com/gif.latex?\beta&space;=&space;0.98), it can be understand as averaging everying 50 timesteps.
+![](https://latex.codecogs.com/gif.latex?V{_t}&space;=&space;\beta&space;V{_{t-1}}&space;&plus;&space;(1-\beta)\Theta&space;{_t}), where ![](https://latex.codecogs.com/gif.latex?V{_t}) is the calculated average at time point t, and ![](https://latex.codecogs.com/gif.latex?\theta&space;{_t}) is the original data at time point t. The exponentially weighted average method can be understood as taking the average of the last  ![](https://latex.codecogs.com/gif.latex?\frac{1}{1-\beta&space;}). For example, when ![](https://latex.codecogs.com/gif.latex?\beta&space;=&space;0.9), it can be understand as averaging the last 20 data points. When ![](https://latex.codecogs.com/gif.latex?\beta&space;=&space;0.98), it can be understand as averaging everying 50 timesteps.
 
-Note that:
+As we have
+
+![](https://latex.codecogs.com/gif.latex?V{_t}&space;=&space;\beta&space;V{_{t-1}}&space;&plus;&space;(1-\beta)\Theta&space;{_t})
+
+Therefore, 
+
+![](http://www.sciweavers.org/tex2img.php?eq=V%7B_%7B100%7D%7D%20%3D%20%20%5Cbeta%20V%7B_%7B99%7D%7D%20%2B%20%281-%20%5Cbeta%29%20%5Ctheta%7B_%7B100%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+![](http://www.sciweavers.org/tex2img.php?eq=V%7B_%7B99%7D%7D%20%3D%20%20%5Cbeta%20V%7B_%7B98%7D%7D%20%2B%20%281-%20%5Cbeta%29%20%5Ctheta%7B_%7B99%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+
 
 <img src="weightdecay2.jpg" width="500"> 
 <img src="weightdecay3.jpg" width="500"> 
