@@ -108,9 +108,30 @@ As we have
 
 Therefore, 
 
-![](http://www.sciweavers.org/tex2img.php?eq=V%7B_%7B100%7D%7D%20%3D%20%20%5Cbeta%20V%7B_%7B99%7D%7D%20%2B%20%281-%20%5Cbeta%29%20%5Ctheta%7B_%7B100%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![](http://www.sciweavers.org/tex2img.php?eq=V%7B_%7B100%7D%7D%20%3D%20%20%5Cbeta%20V%7B_%7B99%7D%7D%20%2B%20%281-%20%5Cbeta%29%20%5Ctheta%7B_%7B100%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) - Eq 1
 
-![](http://www.sciweavers.org/tex2img.php?eq=V%7B_%7B99%7D%7D%20%3D%20%20%5Cbeta%20V%7B_%7B98%7D%7D%20%2B%20%281-%20%5Cbeta%29%20%5Ctheta%7B_%7B99%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![](http://www.sciweavers.org/tex2img.php?eq=V%7B_%7B99%7D%7D%20%3D%20%20%5Cbeta%20V%7B_%7B98%7D%7D%20%2B%20%281-%20%5Cbeta%29%20%5Ctheta%7B_%7B99%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) - Eq 2
+
+
+![](http://www.sciweavers.org/tex2img.php?eq=V%7B_%7B98%7D%7D%20%3D%20%20%5Cbeta%20V%7B_%7B97%7D%7D%20%2B%20%281-%20%5Cbeta%29%20%5Ctheta%7B_%7B98%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) - Eq 3
+
+...
+
+By expending Eq 1 based on Eq 2, 3 ..., we then have 
+
+![](http://www.sciweavers.org/tex2img.php?eq=V%7B_%7B100%7D%7D%20%3D%20%20%5Cbeta%20V%7B_%7B99%7D%7D%20%2B%20%5Cbeta%20%281-%20%5Cbeta%29%7B%5E1%7D%20%5Ctheta%7B_%7B99%7D%7D%20%2B%20%5Cbeta%20%281-%20%5Cbeta%29%7B%5E2%7D%20%5Ctheta%7B_%7B98%7D%7D%2B%20%5Cbeta%20%281-%20%5Cbeta%29%7B%5E3%7D%20%5Ctheta%7B_%7B97%7D%7D%20%2B%20%5Cbeta%20%281-%20%5Cbeta%29%7B%5E4%7D%20%5Ctheta%7B_%7B96%7D%7D%20%2B%20...&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+
+If  ![](https://latex.codecogs.com/gif.latex?\beta&space;=&space;0.9)
+
+As we know 
+
+![](http://www.sciweavers.org/tex2img.php?eq=0.9%7B%5E%7B10%7D%7D%20%20%5Capprox%200.35%20%20%5Capprox%20%20%5Cfrac%7B1%7D%7Be%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+
+Meaning that the contribution of data at timestep t-9 (![](http://www.sciweavers.org/tex2img.php?eq=%20%5Ctheta%20%7B_%7Bt-9%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0))to the averaged value (![](http://www.sciweavers.org/tex2img.php?eq=%20V%7B_t%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)) at timestep t is only 1/3 as the contibution of actual value at timestep t (![](http://www.sciweavers.org/tex2img.php?eq=%20%5Ctheta%20%7B_t%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)). 
+
+
+
 
 
 
