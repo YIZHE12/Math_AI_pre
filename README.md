@@ -103,7 +103,7 @@ Before going into details, we need to first understand two concepts: exponential
 
 The exponentially weighted averages can be understand as the average of the original data (upper graph) multiplied by the weight (lower graph). 
 
-
+<img src="readme_appenx/weightdecay.jpg" width="500"> 
 
 ![](https://latex.codecogs.com/gif.latex?V{_t}&space;=&space;\beta&space;V{_{t-1}}&space;&plus;&space;(1-\beta)\Theta&space;{_t}), where ![](https://latex.codecogs.com/gif.latex?V{_t}) is the calculated average at time point t, and ![](https://latex.codecogs.com/gif.latex?\theta&space;{_t}) is the original data at time point t. The exponentially weighted average method can be understood as taking the average of the last  ![](https://latex.codecogs.com/gif.latex?\frac{1}{1-\beta&space;}). For example, when ![](https://latex.codecogs.com/gif.latex?\beta&space;=&space;0.9), it can be understand as averaging the last 20 data points. When ![](https://latex.codecogs.com/gif.latex?\beta&space;=&space;0.98), it can be understand as averaging everying 50 timesteps.
 
