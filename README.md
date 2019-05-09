@@ -101,7 +101,7 @@ c. Green: Minibatch gradient descent - update one batch/ several examples in one
 
 Before going into details, we need to first understand two concepts: exponentially weighted averages and bias correction. 
 
-The exponentially weighted averages can be understand as the average of the original data (upper graph) multiplied by the weight (lower graph). 
+a. The exponentially weighted averages can be understand as the average of the original data (upper graph) multiplied by the weight (lower graph). 
 
 <img src="readme_appenx/weightdecay.jpg" width="500"> 
 
@@ -111,14 +111,14 @@ The exponentially weighted average: ![](https://latex.codecogs.com/gif.latex?V{_
 
 The above means that for V100, the contribution of theta(100-9) is only 1/3 as the contribution fo theta(100).
 
+b. Bias correction
+In exponentially eighted average, we have the first average point V0 = 0, that means that at the beginining of the averaging point, the averaged is lower than what is ideal. As in the below group, instead of getting the green curve, we get the orange curve. Bias correction is a method to correct this effect. However, in DL, bias correction is not always applied as we may only care the later values but not the initial values.
 
-
-
-
-<img src="weightdecay2.jpg" width="500"> 
 <img src="weightdecay3.jpg" width="500"> 
 
 1. Gradient descent with momentum
+
+Applying the weighted decay averaging concept into the weight update in NN training, we have:
 
 <img src="weightdecay4.jpg" width="500"> 
 
